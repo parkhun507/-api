@@ -1,0 +1,62 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Users\paradise\AppData\Roaming\npm\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.3.0
+2 info using node@v22.15.0
+3 silly config load:file:C:\Users\paradise\AppData\Roaming\npm\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\paradise\OneDrive\Desktop\ts-pokedex-master\.npmrc
+5 silly config load:file:C:\Users\paradise\.npmrc
+6 silly config load:file:C:\Users\paradise\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm install
+8 verbose argv "install"
+9 verbose logfile logs-max:10 dir:C:\Users\paradise\OneDrive\Desktop\ts-pokedex-master\npm-cache\_logs\2025-07-04T02_23_23_023Z-
+10 verbose logfile C:\Users\paradise\OneDrive\Desktop\ts-pokedex-master\npm-cache\_logs\2025-07-04T02_23_23_023Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 warn old lockfile
+13 warn old lockfile The package-lock.json file was created with an old version of npm,
+13 warn old lockfile so supplemental metadata must be fetched from the registry.
+13 warn old lockfile
+13 warn old lockfile This is a one-time fix-up, please be patient...
+13 warn old lockfile
+14 silly inflate node_modules/@types/es6-promise
+15 silly packumentCache corgi:https://registry.npmjs.org/@types%2fes6-promise cache-miss
+16 silly inflate node_modules/es6-promise
+17 silly packumentCache corgi:https://registry.npmjs.org/es6-promise cache-miss
+18 http fetch GET 200 https://registry.npmjs.org/es6-promise 340ms (cache miss)
+19 silly packumentCache corgi:https://registry.npmjs.org/es6-promise set size:undefined disposed:false
+20 http fetch GET 200 https://registry.npmjs.org/@types%2fes6-promise 1160ms (cache miss)
+21 silly packumentCache corgi:https://registry.npmjs.org/@types%2fes6-promise set size:undefined disposed:false
+22 silly idealTree buildDeps
+23 silly reify mark retired [
+23 silly reify   'C:\\Users\\paradise\\OneDrive\\Desktop\\ts-pokedex-master\\node_modules\\es6-promise'
+23 silly reify ]
+24 silly reify mark retired [
+24 silly reify   'C:\\Users\\paradise\\OneDrive\\Desktop\\ts-pokedex-master\\node_modules\\@types\\es6-promise'
+24 silly reify ]
+25 silly reify moves {
+25 silly reify   'C:\\Users\\paradise\\OneDrive\\Desktop\\ts-pokedex-master\\node_modules\\es6-promise': 'C:\\Users\\paradise\\OneDrive\\Desktop\\ts-pokedex-master\\node_modules\\.es6-promise-SbKo1GRe',
+25 silly reify   'C:\\Users\\paradise\\OneDrive\\Desktop\\ts-pokedex-master\\node_modules\\@types\\es6-promise': 'C:\\Users\\paradise\\OneDrive\\Desktop\\ts-pokedex-master\\node_modules\\@types\\.es6-promise-glueHFKy'
+25 silly reify }
+26 verbose stack Error: Could not read package.json: Error: ENOENT: no such file or directory, open 'C:\Users\paradise\OneDrive\Desktop\ts-pokedex-master\package.json'
+26 verbose stack     at async open (node:internal/fs/promises:633:25)
+26 verbose stack     at async readFile (node:internal/fs/promises:1237:14)
+26 verbose stack     at async read (C:\Users\paradise\AppData\Roaming\npm\node_modules\npm\node_modules\@npmcli\package-json\lib\read-package.js:9:18)
+26 verbose stack     at async PackageJson.load (C:\Users\paradise\AppData\Roaming\npm\node_modules\npm\node_modules\@npmcli\package-json\lib\index.js:131:31)
+26 verbose stack     at async PackageJson.normalize (C:\Users\paradise\AppData\Roaming\npm\node_modules\npm\node_modules\@npmcli\package-json\lib\index.js:117:5)
+26 verbose stack     at async runScript (C:\Users\paradise\AppData\Roaming\npm\node_modules\npm\node_modules\@npmcli\run-script\lib\run-script.js:11:28)
+26 verbose stack     at async Install.exec (C:\Users\paradise\AppData\Roaming\npm\node_modules\npm\lib\commands\install.js:162:9)
+26 verbose stack     at async Npm.exec (C:\Users\paradise\AppData\Roaming\npm\node_modules\npm\lib\npm.js:208:9)
+26 verbose stack     at async module.exports (C:\Users\paradise\AppData\Roaming\npm\node_modules\npm\lib\cli\entry.js:67:5)
+27 error code ENOENT
+28 error syscall open
+29 error path C:\Users\paradise\OneDrive\Desktop\ts-pokedex-master\package.json
+30 error errno -4058
+31 error enoent Could not read package.json: Error: ENOENT: no such file or directory, open 'C:\Users\paradise\OneDrive\Desktop\ts-pokedex-master\package.json'
+32 error enoent This is related to npm not being able to find a file.
+32 error enoent
+33 verbose cwd C:\Users\paradise\OneDrive\Desktop\ts-pokedex-master
+34 verbose os Windows_NT 10.0.26100
+35 verbose node v22.15.0
+36 verbose npm  v11.3.0
+37 verbose exit -4058
+38 verbose code -4058
+39 error A complete log of this run can be found in: C:\Users\paradise\OneDrive\Desktop\ts-pokedex-master\npm-cache\_logs\2025-07-04T02_23_23_023Z-debug-0.log
